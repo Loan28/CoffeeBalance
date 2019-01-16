@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "125441149421",
+    "firebase_url": "https://coffeebalance-1547482642329.firebaseio.com",
+    "project_id": "coffeebalance-1547482642329",
+    "storage_bucket": "coffeebalance-1547482642329.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125441149421:android:f5e7e0dc93d59414",
+        "android_client_info": {
+          "package_name": "coffebalance.coffeebalanceproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125441149421-m4979qqi3220d32uifq7rrv886ih3bhr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coffebalance.coffeebalanceproject",
+            "certificate_hash": "8b1c6658b02ce153985f0bb41468f85fa4407187"
+          }
+        },
+        {
+          "client_id": "125441149421-i664g3mi89hf5vqjgkvg7ojdesllh6lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGRfyX7CipaSobFphT6MLhrjQvRk2eciw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125441149421-i664g3mi89hf5vqjgkvg7ojdesllh6lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125441149421:android:27836a139b336917",
+        "android_client_info": {
+          "package_name": "coffeebalance.coffeebalance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125441149421-i664g3mi89hf5vqjgkvg7ojdesllh6lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGRfyX7CipaSobFphT6MLhrjQvRk2eciw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
