@@ -65,39 +65,16 @@
         android:paddingTop="10pt"
         android:paddingRight="10pt"
         android:paddingBottom="10pt"
+        android:textAlignment="center"
         android:textColor="@color/colorTitle"
         android:textSize="19sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainTitleTxt"
-        app:layout_constraintVertical_bias="0.086" />
-
-
-
-    <TextView
-        android:id="@+id/Balance2"
-        android:layout_width="188dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:paddingLeft="13pt"
-        android:paddingTop="10pt"
-        android:paddingRight="10pt"
-        android:paddingBottom="10pt"
-        android:textColor="@color/colorTitle"
-        android:textSize="19sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.599"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainTitleTxt"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <Button
         android:id="@+id/coffeeChpBtn"
