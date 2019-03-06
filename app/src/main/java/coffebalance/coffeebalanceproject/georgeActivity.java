@@ -19,7 +19,7 @@ public class georgeActivity extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loan);
+        setContentView(R.layout.activity_george);
 
         final TextView balanceView = findViewById(R.id.Balance);
 
