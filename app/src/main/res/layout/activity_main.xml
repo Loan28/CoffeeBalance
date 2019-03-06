@@ -9,10 +9,10 @@
 
 
     <Button
-        android:id="@+id/btn_jump"
+        android:id="@+id/georgeBtn"
         android:layout_width="128dp"
         android:layout_height="250dp"
-        android:text="Twat2"
+        android:text="@string/name_george"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,10 +25,10 @@
         tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:id="@+id/btn_jump2"
+        android:id="@+id/loanBtn"
         android:layout_width="128dp"
         android:layout_height="250dp"
-        android:text="Twat"
+        android:text="@string/name_loan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -40,53 +40,24 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="340dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="620dp" />
-
-    <android.support.constraint.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left" />
-
-    <android.support.constraint.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
-
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="221dp"
-        android:layout_height="48dp"
-        android:text="Who are you?"
+        android:id="@+id/mainTitleTxt"
+        android:layout_width="334dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="10pt"
+        android:paddingTop="10pt"
+        android:paddingRight="10pt"
+        android:paddingBottom="10pt"
+        android:text="@string/mainTitle"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="90dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
 
 </android.support.constraint.ConstraintLayout>

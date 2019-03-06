@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CoffeeBalanceProject</string>
+    <string name="mainTitle">Who Goes There?</string>
+    <string name="name_loan">Loan</string>
+    <string name="name_george">George</string>
+    <string name="title_loan">Welcome Loan</string>
+    <string name="title_george">Welcome George</string>
 </resources>
