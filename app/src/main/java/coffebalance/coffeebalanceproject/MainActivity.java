@@ -23,23 +23,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button loanBtn = (Button) findViewById(R.id.loanBtn);
-        Button georgeBtn = (Button) findViewById(R.id.georgeBtn);
+        Button loanBtn = findViewById(R.id.loanBtn);
+        Button georgeBtn = findViewById(R.id.georgeBtn);
 
         loanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Called upon click of loanBtn
-                Intent startIntent = new Intent(getApplicationContext(), loanActivity.class);
-                startActivity(startIntent);
+                Intent startIntentL = new Intent(getApplicationContext(), loanActivity.class);
+                // Load 'loanActivity' as a class into an Intent variable
+                startActivity(startIntentL);
             }
         });
 
         georgeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), georgeActivity.class);
-                startActivity(startIntent);
+                Intent startIntentG = new Intent(getApplicationContext(), georgeActivity.class);
+                startActivity(startIntentG);
             }
         });
 
