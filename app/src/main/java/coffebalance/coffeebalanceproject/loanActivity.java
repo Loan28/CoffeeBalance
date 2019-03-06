@@ -1,7 +1,6 @@
 package coffebalance.coffeebalanceproject;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +14,6 @@ import com.google.firebase.database.ValueEventListener;
 
 public class loanActivity extends AppCompatActivity {
     int  Balance1;
-    int  Balance2;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     @Override
@@ -23,11 +21,10 @@ public class loanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan);
 
-        final TextView test = findViewById(R.id.Balance);
+        final TextView balanceView = findViewById(R.id.Balance);
 
         Button coffeeChpBtn = findViewById(R.id.coffeeChpBtn);
         Button coffeeExpBtn = findViewById(R.id.coffeeExpBtn);
-
 
         final DatabaseReference Ref = database.getReference("Balance1");
 
@@ -37,8 +34,8 @@ public class loanActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                Balance1 = dataSnapshot.getValue(Integer.class);
-                test.setText(Integer.toString(Balance1));
+                Balance1 = Integer.valueOf(dataSnapshot.getValue(Integer.class));
+                balanceView.setText(Integer.toString(Balance1));
             }
 
             @Override
@@ -49,35 +46,17 @@ public class loanActivity extends AppCompatActivity {
         coffeeChpBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Ref.setValue(Balance1 + 1);
-                Minus(1);
+                DatabaseReference Ref2 = database.getReference("Balance2");
+                Ref2.setValue((-1*Balance1) - 1);
 
             }
         });
         coffeeExpBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Ref.setValue(Balance1 + 2);
-                Minus(2);
+                DatabaseReference Ref2 = database.getReference("Balance2");
+                Ref2.setValue((-1*Balance1) - 2);
             }
         });
-    }
-
-    public void Minus(int Value) {
-
-
-            final DatabaseReference Ref2 = database.getReference("Balance2");
-            Ref2.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    Balance2 = dataSnapshot.getValue(Integer.class);
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-                    // Failed to read value
-                }
-            });
-            Ref2.setValue(Balance2 - Value);
-
-
     }
 }
