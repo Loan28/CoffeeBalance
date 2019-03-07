@@ -12,11 +12,13 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class georgeActivity extends AppCompatActivity {
+import java.sql.Ref;
 
-    int  Balance1;
+public class georgeActivity extends AppCompatActivity {
+    int Balance1;
     int  Balance2;
-    FirebaseDatabase database = FirebaseDatabase.getInstance();    @Override
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_george);
@@ -26,8 +28,7 @@ public class georgeActivity extends AppCompatActivity {
         Button coffeeChpBtn = findViewById(R.id.coffeeChpBtn);
         Button coffeeExpBtn = findViewById(R.id.coffeeExpBtn);
 
-
-        final DatabaseReference Ref = database.getReference("Balance2");
+        final DatabaseReference Ref = database.getReference("Balance1");
 
         // Read from the database
         Ref.addValueEventListener(new ValueEventListener() {

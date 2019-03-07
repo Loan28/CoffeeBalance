@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "125441149421-uus29oufg84cl5b8g9sgudiurm8lcuuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coffebalance.coffeebalanceproject",
+            "certificate_hash": "8213fe68f8c6921f2b2c666fbb0ce2167c8941b7"
+          }
+        },
+        {
           "client_id": "125441149421-i664g3mi89hf5vqjgkvg7ojdesllh6lt.apps.googleusercontent.com",
           "client_type": 3
         }
