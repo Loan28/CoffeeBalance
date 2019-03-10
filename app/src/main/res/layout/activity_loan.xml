@@ -7,6 +7,8 @@
     android:background="@color/colorPrimary"
     tools:context=".loanActivity">
 
+    <!--(TODO) Make this pretty-->
+
     <TextView
         android:id="@+id/mainTitleTxt"
         android:layout_width="334dp"

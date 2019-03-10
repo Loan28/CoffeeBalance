@@ -8,6 +8,9 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
+    <!--(TODO) Remove purple top bar - @George
+        (TODO) Merge second page into one, use if statement to change theme depending on button press(?) - @George-->
+
     <Button
         android:id="@+id/georgeBtn"
         android:layout_width="128dp"
